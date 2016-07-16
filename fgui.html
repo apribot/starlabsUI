@@ -4,375 +4,11 @@
 	<title>
 	</title>
 	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-<style>
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
-    position:relative;
-}
-body{
-    height:100%; /* force the BODY element to match the height of the HTML element */
-    background-color:#1e3845;
-    font-family: 'Quicksand', sans-serif;
-    color:#fff;
-}
-
-.bg{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-}
-
-#bga {
-	background: #1e3845; /* Old browsers */
-	background: -moz-linear-gradient(top,  #1e3845 0%, #195f69 12%, #1e3845 49%, #397f89 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #1e3845 0%,#195f69 12%,#1e3845 49%,#397f89 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #1e3845 0%,#195f69 12%,#1e3845 49%,#397f89 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3845', endColorstr='#397f89',GradientType=0 ); /* IE6-9 */
-  -webkit-filter: blur(50px); /* Chrome, Safari, Opera */
-  filter: blur(50px);
-  z-index:-4; /* Remove this line if it's not going to be a background! */
-}
-
-#bgb {
-  background: url(dot.png);
-  z-index:-3; /* Remove this line if it's not going to be a background! */
-}
-
-#bgc {
-	z-index:-2;
-}
-
-#bgc .t { 
-	border-collapse: separate; 
-	border-spacing: 14px;
-}
-
-#bgc .t tr td{
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
-  background-color: rgba(57, 127, 137, 0.10);
-  width:120px;
-  height:60px;
-  -webkit-filter: blur(2px); /* Chrome, Safari, Opera */
-  filter: blur(2px);
-}
-
-#bgc #t1 {
-	position: absolute;
-	top:400px;
-	left:600px;	
-}
-
-#bgc #t2 {
-	position: absolute;
-	top:200px;
-	left:500px;	
-}
-
-#bgc #t3 {
-	position: absolute;
-	top:120px;
-	left:40px;	
-}
-
-#stars {
-	z-index: -4;
-}
-
-.btn {
-  width:300px;
-  height:100px;
-  border: 2px solid #bbb;
-  position: relative;
-  box-shadow: 0 0 1px rgba(255,255,255,0.5);
-  margin:0px 10px 10px 0px;
-  
-}
-
-.btn::before {
-  content: "40";
-  width: 12px;
-  height: 12px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #aaa;
-  position:absolute;
-  top:0px;
-  left:-24px;
-  font-size:8px;
-  text-align: center;
-  line-height:12px;
-  font-weight: 700;
-  background:rgba(0,0,0,0.1);
-  box-shadow: 0 0 1px rgba(255,255,255,0.5);
-}
-
-.btn span {
-  font-size:50px;
-  line-height: 100px;
-  margin-left:30px;
-}
-
-.btn::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 20px 20px;
-  border-color: transparent transparent #fff transparent;
-  position:absolute;
-  top:81px;
-  left:281px;
-}
-
-.btnwhite span::after {
-  content: "";
-  height:2px;
-  width:70px;
-  background-color:#bbb;
-  position:absolute;
-  top:10px;
-  left:250px
-}
-
-.btnwhite span::before {
-  content: "";
-  height:6px;
-  width:6px;
-  background-color:#fff;
-  position:absolute;
-  top:8px;
-  left:320px
-}
-
-.btnyellow {
-  border: 2px solid #afad00 !important;
-  box-shadow: 0 0 1px rgba(255,240,0,0.5)  !important;
-} 
-
-.btnyellow::after {
-  border-color: transparent transparent #fffd00 transparent  !important;
-}
-
-.btnyellow span {
-  color:#fffd00;
-}
-
-.btnyellow span::after {
-  content: "";
-  height:2px;
-  width:70px;
-  background-color:#afad00;
-  position:absolute;
-  top:10px;
-  left:250px
-}
-
-.btnyellow span::before {
-  content: "";
-  height:6px;
-  width:6px;
-  background-color:#fffd00;
-  position:absolute;
-  top:8px;
-  left:320px
-}
-
-.btnred {
-  border: 2px solid rgb(254, 61, 74) !important;
-  box-shadow: 0 0 1px rgba(254,61,74,0.5)  !important;
-} 
-
-.btnred::after {
-  border-color: transparent transparent rgb(254, 61, 74) transparent  !important;
-  border-width: 0 0 40px 40px !important;
-  top:61px;
-  left:261px;
-}
-
-.btnred span {
-  color: rgb(254,61,74);
-}
-
-#main {
-  margin: 50px 0px 0px 100px;
-}
-
-.leftblock {
-  width:300px;
-  height:80px;
-  position:relative;
-}
-
-.leftblock::after {
-  position: absolute;
-  top:-20px;
-  border:2px #397f89 solid;
-  content:"";
-  width:320px;
-  height:20px;
-  border-bottom: none;
-}
-
-.leftblock pre {
-  font-family: 'Share Tech Mono' !important;
-  color:rgb(105, 196, 205);
-  font-size:10px;
-  font-weight:700;
-  margin:0px 0px 0px 16px;
-}
-
-.leftblock::before {
-  content: "40";
-  width: 12px;
-  height: 12px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #aaa;
-  position:absolute;
-  top:-20px;
-  left:-24px;
-  font-size:8px;
-  text-align: center;
-  line-height:12px;
-  font-weight: 700;
-  background:rgba(0,0,0,0.1);
-  box-shadow: 0 0 1px rgba(255,255,255,0.5);
-}
-
-.leftblock .status {
-  font-size:20px;
-  color:#fff;
-  margin-left:16px;
-  font-weight:700;
-}
-
-.slider {
-  float:left;
-  font-size:8px;
-  font-weight: 700;
-  position:relative;
-  margin-top:14px;
-  margin-left:20px;
-}
-
-.slider2 {
-  float:left;
-  font-size:8px;
-  font-weight: 700;
-  position:relative;
-  margin-top:14px;
-  margin-left:20px;
-}
-
-.slider::after {
-  content: "";
-  height:6px;
-  width:16px;
-  background-color:#fffd00;
-  position:absolute;
-  top:-6px;
-  left:50px
-}
-
-.slider::before{
-  content: "";
-  height:2px;
-  width:184px;
-  background-color:rgb(105, 196, 205);
-  position:absolute;
-  top:-4px;
-  left:0px
-}
-
-.slider2::after {
-  content: "";
-  height:6px;
-  width:16px;
-  background-color:#fffd00;
-  position:absolute;
-  top:-6px;
-  left:150px
-}
-.slider2::before{
-  content: "";
-  height:2px;
-  width:184px;
-  background-color:rgb(105, 196, 205);
-  position:absolute;
-  top:-4px;
-  left:0px
-}
-
-.leftblock table tr td {
-}
-
-#left {
-  width:350px;
-  float:left;
-}
-
-#right {
-  float:left;
-  width:700px;
-  height:500px;
-}
-
-#right #pane {
-}
-
-</style>
+  <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+  <link href='starlabmain.css' rel='stylesheet' type='text/css'>
+  <script>
+document.domain = document.domain;
+</script>
 </head>
 <body>
   <div id="bga" class="bg"></div>
@@ -383,196 +19,56 @@ body{
       <tr><td></td><td></td></tr>
       <tr><td></td><td></td></tr>
     </table>
-  <table id="t2" class="t">
-    <tr><td></td><td></td></tr>
-    <tr><td></td><td></td></tr>
-    <tr><td></td><td></td></tr>
-  </table>
-  <table id="t3" class="t">
-    <tr><td></td><td></td></tr>
-    <tr><td></td><td></td></tr>
-    <tr><td></td><td></td></tr>
-  </table>
-</div>
-<canvas id="stars" class="bg" width="1304" height="657"></canvas>
-<div id="main">
-  <div id="left">
-    <div class="leftblock">
-      <pre>
+    <table id="t2" class="t">
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+    </table>
+    <table id="t3" class="t">
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+    </table>
+  </div>
+  <canvas id="stars" class="bg" width="1304" height="657"></canvas>
+  <div id="main">
+    <table><tr><td id="left">
+      <div class="leftblock">
+        <pre>
 DLINK     ERR      OCT-GAT
 99041-3   032   1110     936
 22642     908   9929     921
 09310     229   9129     919
-      </pre>
+        </pre>
+      </div>
+      <div class="leftblock">
+        <table> 
+          <tr>
+            <td rowspan=2><div class="status">STATUS</div></td>
+            <td><div class="slider">44.3 ---</div></td>
+          </tr>
+          <tr>
+            <td><div class="slider2">44.3 ---</div></td>
+          </tr>
+        </table>
+      </div>
+      <div class="btn btnyellow">
+        <span>CLEAR</span>
+      </div>
+      <div class="btn btnwhite">
+        <span>OPEN</span>
+      </div>
+      <div class="btn btnred">
+        <span>ARMED</span>
+      </div>
     </div>
-    <div class="leftblock">
-      <table> 
-        <tr>
-          <td rowspan=2><div class="status">STATUS</div></td>
-          <td><div class="slider">44.3 ---</div></td>
-        </tr>
-        <tr>
-          <td><div class="slider2">44.3 ---</div></td>
-        </tr>
-      </table>
-    </div>
-    <div class="btn btnyellow">
-      <span>CLEAR</span>
-    </div>
-    <div class="btn btnwhite">
-      <span>OPEN</span>
-    </div>
-    <div class="btn btnred">
-      <span>ARMED</span>
-    </div>
-  </div>
-  <div id="right">
-    <div id="pane">
-      THINGS!
-    </div>
-  </div>
+    </td><td id="right">
+        <iframe src="http://localhost:8088/terminal/" id="term" allowtransparency="true"></iframe>
+    </td>
+  </tr></table>
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-//CANVAS
-$(function(){
-  var canvas = document.querySelector('canvas'),
-  ctx = canvas.getContext('2d')
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  ctx.lineWidth = .3;
-  ctx.strokeStyle = (new Color(150)).style;
+<script src="main.js"></script>
 
-  var mousePosition = {
-    x: canvas.width / 2,
-    y: canvas.height / 2
-  };
-
-  var dots = {
-    nb: 100,
-    distance: 90,
-    d_radius: 650,
-    array: []
-  };
-
-  function colorValue(min) {
-    return 255;
-  }
-  
-  function createColorStyle(r,g,b) {
-    return 'rgba(57, 127, 137, 0.5)';
-  }
-  
-  function mixComponents(comp1, weight1, comp2, weight2) {
-    return (comp1 * weight1 + comp2 * weight2) / (weight1 + weight2);
-  }
-  
-  function averageColorStyles(dot1, dot2) {
-    var color1 = dot1.color,
-        color2 = dot2.color;
-    
-    var r = mixComponents(color1.r, dot1.radius, color2.r, dot2.radius),
-        g = mixComponents(color1.g, dot1.radius, color2.g, dot2.radius),
-        b = mixComponents(color1.b, dot1.radius, color2.b, dot2.radius);
-    return createColorStyle(Math.floor(r), Math.floor(g), Math.floor(b));
-  }
-  
-  function Color(min) {
-    min = min || 0;
-    this.r = colorValue(min);
-    this.g = colorValue(min);
-    this.b = colorValue(min);
-    this.style = createColorStyle(this.r, this.g, this.b);
-  }
-
-  function Dot(){
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-
-    this.vx = -.5 + Math.random();
-    this.vy = -.5 + Math.random();
-
-    this.radius = Math.random() * 2;
-
-    this.color = new Color();
-  }
-
-  Dot.prototype = {
-    draw: function(){
-      ctx.beginPath();
-      ctx.fillStyle = this.color.style;
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-      ctx.fill();
-    }
-  };
-
-  function createDots(){
-    for(i = 0; i < dots.nb; i++){
-      dots.array.push(new Dot());
-    }
-  }
-
-  function moveDots() {
-    for(i = 0; i < dots.nb; i++){
-
-      var dot = dots.array[i];
-
-      if(dot.y < 0 || dot.y > canvas.height){
-        dot.vx = dot.vx;
-        dot.vy = - dot.vy;
-      }
-      else if(dot.x < 0 || dot.x > canvas.width){
-        dot.vx = - dot.vx;
-        dot.vy = dot.vy;
-      }
-      dot.x += dot.vx;
-      dot.y += dot.vy;
-    }
-  }
-
-  function connectDots() {
-    for(i = 0; i < dots.nb; i++){
-      for(j = 0; j < dots.nb; j++){
-        i_dot = dots.array[i];
-        j_dot = dots.array[j];
-
-        if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
-          if((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius){
-            ctx.beginPath();
-            ctx.strokeStyle = averageColorStyles(i_dot, j_dot);
-            ctx.moveTo(i_dot.x, i_dot.y);
-            ctx.lineTo(j_dot.x, j_dot.y);
-            ctx.stroke();
-            ctx.closePath();
-          }
-        }
-      }
-    }
-  }
-
-  function drawDots() {
-    for(i = 0; i < dots.nb; i++){
-      var dot = dots.array[i];
-      dot.draw();
-    }
-  }
-
-  function animateDots() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    moveDots();
-    connectDots();
-    drawDots();
-
-    //requestAnimationFrame(animateDots);  
-  }
-
-  createDots();
-  requestAnimationFrame(animateDots);  
-  $('.txt').html(function(i, html) {
-    var chars = $.trim(html).split("");
-    return '<span>' + chars.join('</span><span>') + '</span>';
-  });
-});
-</script>
 </html>
