@@ -6,9 +6,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
   <link href='starlabmain.css' rel='stylesheet' type='text/css'>
-  <script>
-document.domain = document.domain;
-</script>
 </head>
 <body>
   <div id="bga" class="bg"></div>
@@ -45,25 +42,29 @@ DLINK     ERR      OCT-GAT
         <table> 
           <tr>
             <td rowspan=2><div class="status">STATUS</div></td>
-            <td><div class="slider">44.3 ---</div></td>
+            <td>
+            <input type="range" id="range1">
+            <div class="slider">44.3 ---</div></td>
           </tr>
           <tr>
-            <td><div class="slider2">44.3 ---</div></td>
+            <td>
+            <input type="range" id="range2">
+            <div class="slider2">44.3 ---</div></td>
           </tr>
         </table>
       </div>
-      <div class="btn btnyellow">
+      <div id="clear" class="btn btnyellow">
         <span>CLEAR</span>
       </div>
-      <div class="btn btnwhite">
+      <div id="open" class="btn btnwhite">
         <span>OPEN</span>
       </div>
-      <div class="btn btnred">
+      <div id="armed" class="btn btnred">
         <span>ARMED</span>
       </div>
     </div>
     </td><td id="right">
-        <iframe src="http://localhost:8088/terminal/" id="term" allowtransparency="true"></iframe>
+        <iframe src="server.php" id="term" allowtransparency="true"></iframe>
     </td>
   </tr></table>
 </div>
